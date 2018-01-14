@@ -696,3 +696,334 @@ Started GET "/" for 10.0.2.2 at 2018-01-13 15:54:28 +0900
 Processing by Rails::WelcomeController#index as HTML
   Rendered /home/vagrant/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (41.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (11.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateImages (20180113091545)
+  [1m[35m (6.1ms)[0m  CREATE TABLE `images` (`id` int(11) auto_increment PRIMARY KEY, `image` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20180113091545')
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Nsreviews2_development'
+  AND fk.table_name = 'images'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `images`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (15.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (108.5ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (52.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (84.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')[0m
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:37', '2018-01-13 09:38:37')
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:38', '2018-01-13 09:38:38')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:38', '2018-01-13 09:38:38')
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('', '2018-01-13 09:38:38', '2018-01-13 09:38:38')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (20.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYMAFAAIMAAAaAAHl3zLRAAAAAElFTkSuQmCC', '2018-01-13 09:42:12', '2018-01-13 09:42:12')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGVp66NOHsAXTrc3Dz39pQgxLChfJJ43gwPzVCzCyduyj6EGI6p5n8GY', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (17.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00yN80FZ1edefX-5xX-BvVeRne9gxwtZPg177Ya9EpXrmSS0RQc7U-ORw', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIpJfPikFIiJVCuLxJon6eOz7PyHGgbqnWRDPKrNX5LLHh55rWL0Bvg', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVyMRf7c7kZcfZcHIqJggug1tTO9V8R11BpRKmfJB8Zltgr80_Gny75Io', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShPHS2JNJ1UgYeqzHZyUuO40bgjU5RU205gWZ5zl_DpPOfIk1yqjGAx4', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8Ecdaa0PvjLY0sZ-jKNLvIvTN5CYW04wg1kAJO4w5C_ABcNBwTrCxZM', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGAZGJs0mTv0FXuMnrvbVwQF1ClCrie_8HcfASk0HSg9071QO785hSYUF', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSkHl9KO585GdmP3a6m19yemoqjoGlE6qAFYaK7Es3lZ0ZHHZnJpVu4Cut', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Rj_Vs4EqOxgOzwG963IrmPcqog3sS6ZVUIHNS4QUTg46HCPSgkZ_pOg', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9n2ZfgSNahlirtKrJFaxjpexcG2QyuQiZ9IPdX_jTxZeC_ZmFds_FhM', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7SW4sF7YKjTke8qzX8pMIhp2KKydRuupPiMUVAf486xOSUByrqdpa_rCrg', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VFqbHOeENGoroU8rb_HIMdNBItssIXG_9QSbuQzdoBwh81VnlzDV_0bdiQ', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWy3-FFog2tmxlRBVXLkgocrTSOE4xrd3YtLNyyzzjyeTHXcB0WiOem6M', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQ45nUqJlc9JZLVLzMOVs_45Oiok-dkbAnOvxmBU_JDO-Obg0911xwOCJ', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_e4xQChnn4ED2JkVBbS3cCGJ7v2_3gewL22t08xXDKVPJkuV8idroRk8', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KA6haGk5d4UDn42JVIxT8G_pDJfwonOvAMTuGcVn7HWmrOsyk3FGvbbX', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jiXdwNquNDIqogG82JAJzqN4xW6Y0HZoAAWYo8Bej2UnYwWZ5-KhaoM', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8YQxgjjzPLoo4RUzn-Udkr9UMMmWneaQ15q_dNzKa9m5aqmcmBoRAjCk', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ByCjWOWPccRw5TXWzQyCL9bAOKnFJjtEqtEv_yhLt-h9qdVcHLn3znc', '2018-01-13 09:56:12', '2018-01-13 09:56:12')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3A7aZg1dXUyXi6xaiDuscrAZHXbiFetKqH1XTBdDljji0U3k1dBgYkA', '2018-01-13 09:56:12', '2018-01-13 09:56:12')[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGVp66NOHsAXTrc3Dz39pQgxLChfJJ43gwPzVCzCyduyj6EGI6p5n8GY', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (32.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00yN80FZ1edefX-5xX-BvVeRne9gxwtZPg177Ya9EpXrmSS0RQc7U-ORw', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIpJfPikFIiJVCuLxJon6eOz7PyHGgbqnWRDPKrNX5LLHh55rWL0Bvg', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVyMRf7c7kZcfZcHIqJggug1tTO9V8R11BpRKmfJB8Zltgr80_Gny75Io', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8Ecdaa0PvjLY0sZ-jKNLvIvTN5CYW04wg1kAJO4w5C_ABcNBwTrCxZM', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShPHS2JNJ1UgYeqzHZyUuO40bgjU5RU205gWZ5zl_DpPOfIk1yqjGAx4', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGAZGJs0mTv0FXuMnrvbVwQF1ClCrie_8HcfASk0HSg9071QO785hSYUF', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RUQISrf_z0qqJjevpA5MVcqJUlamWoQ0lAWvryuqJIoonVAEyIH7A3g', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSkHl9KO585GdmP3a6m19yemoqjoGlE6qAFYaK7Es3lZ0ZHHZnJpVu4Cut', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9n2ZfgSNahlirtKrJFaxjpexcG2QyuQiZ9IPdX_jTxZeC_ZmFds_FhM', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VFqbHOeENGoroU8rb_HIMdNBItssIXG_9QSbuQzdoBwh81VnlzDV_0bdiQ', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWy3-FFog2tmxlRBVXLkgocrTSOE4xrd3YtLNyyzzjyeTHXcB0WiOem6M', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7SW4sF7YKjTke8qzX8pMIhp2KKydRuupPiMUVAf486xOSUByrqdpa_rCrg', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jiXdwNquNDIqogG82JAJzqN4xW6Y0HZoAAWYo8Bej2UnYwWZ5-KhaoM', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQ45nUqJlc9JZLVLzMOVs_45Oiok-dkbAnOvxmBU_JDO-Obg0911xwOCJ', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_e4xQChnn4ED2JkVBbS3cCGJ7v2_3gewL22t08xXDKVPJkuV8idroRk8', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KA6haGk5d4UDn42JVIxT8G_pDJfwonOvAMTuGcVn7HWmrOsyk3FGvbbX', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8YQxgjjzPLoo4RUzn-Udkr9UMMmWneaQ15q_dNzKa9m5aqmcmBoRAjCk', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (42.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSSk91Kg7nR90ne7FwQQFbQT0loMKI0H1yj6M24ulA2OWJpFPnUb-nPw', '2018-01-13 10:02:04', '2018-01-13 10:02:04')
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `images` (`image`, `created_at`, `updated_at`) VALUES ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3A7aZg1dXUyXi6xaiDuscrAZHXbiFetKqH1XTBdDljji0U3k1dBgYkA', '2018-01-13 10:02:04', '2018-01-13 10:02:04')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Nsreviews2_development'
+  AND fk.table_name = 'images'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `images`
